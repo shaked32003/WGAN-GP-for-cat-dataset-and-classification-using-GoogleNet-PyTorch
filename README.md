@@ -74,6 +74,6 @@ In general, the parameters I used are:
 * z_dim = 200
 
 where z_dim is the size of the hidden space
-* **In the next part I will explain my decisions for each of the parameters**
+**In the next part I will explain my decisions for each of the parameters**
 
 
