@@ -48,9 +48,13 @@ nn.Tanh()
 
 The architecture of the discriminator that the wgan model uses as the Critic was built from 5 blocks that include:
 nn.Conv2d()
+
 nn.InstanceNorm2d()
+
 nn.LeakyReLU()
+
 and another exit layer that includes:
+
 nn.Conv2d()
 
 After researching that the model performs well with nn.InstanceNorm2d()
