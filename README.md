@@ -28,7 +28,7 @@ The main conclusion was that you should use data that focuses more on a certain 
 I decided to focus on the faces of the dogs and cats and create images that resemble them
 The new goal was to produce data consisting only of cat/dog faces
 The first data I specified was not potentially processable for the task due to the above mentioned points so I looked for a new face data
-Finally I chose for the dogs ___ which included 18k photos and for the cats ___ which included 16k photos
+Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-face-recognition) which included 18k photos and for the cats (https://www.kaggle.com/datasets/spandan2/cats-faces-64x64-for-generative-models) which included 16k photos
 
 After cleaning images that I assumed could damage the quality of the output for one of the reasons I mentioned above, I got the following results:
 
