@@ -11,7 +11,7 @@ The data area was one of the most challenging areas in the project and is divide
 
 In this part it was required to find and process data that would suit the task and it would be possible to create synthetic images of cats and dogs through the wgan model
 
-First I took pictures of whole dogs (__) and I had the assumption that the data I chose was indeed noisy but workable for a wgan type model
+First I took pictures of whole dogs (https://www.kaggle.com/datasets/tongpython/cat-and-dog) and I had the assumption that the data I chose was indeed noisy but workable for a wgan type model
 The data included about 20k pictures in different positions of different types of dogs
 The results were not good and it seemed that the model was far from succeeding in imitating the given distribution
 In the bottom image you can see the original data and in the top image the performance of the model for the given data:
