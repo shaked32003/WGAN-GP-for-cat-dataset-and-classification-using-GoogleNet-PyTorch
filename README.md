@@ -2,7 +2,7 @@
 In this project I am creating generative data using the wgan-gp model of dog and cat faces and performing binary classification for the generative data I created using the GoogleNet network
 My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in wgan-gp.
 
-The following overview presents the main points and main conclusions in each part of the project process
+The following coverage presents the **main points and main conclusions** in each part of the project process, but in practice there were additional considerations
 
 # dataset
 The data area was one of the most challenging areas in the project and is divided into several parts where the data challenges changed in each of them:
