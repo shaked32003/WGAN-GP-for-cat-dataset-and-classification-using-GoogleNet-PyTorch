@@ -39,23 +39,25 @@ After cleaning images that I assumed could damage the quality of the output for 
 
 The model chosen was as mentioned wgan-gp
 The architecture of the Generator was built from 5 blocks including:
-nn.ConvTranspose2d()
-nn.BatchNorm2d()
-nn.ReLU()
+
+- nn.ConvTranspose2d()
+- nn.BatchNorm2d()
+- nn.ReLU()
+
 and another exit layer that includes:
-nn.ConvTranspose2d()
-nn.Tanh()
+
+- nn.ConvTranspose2d()
+- nn.Tanh()
 
 The architecture of the discriminator that the wgan model uses as the Critic was built from 5 blocks that include:
-nn.Conv2d()
 
-nn.InstanceNorm2d()
-
-nn.LeakyReLU()
+- nn.Conv2d()
+- nn.InstanceNorm2d()
+- nn.LeakyReLU()
 
 and another exit layer that includes:
 
-nn.Conv2d()
+- nn.Conv2d()
 
 After researching that the model performs well with nn.InstanceNorm2d()
 and nn.LeakyReLU() in tasks similar to my task such as creating a person's face or bedrooms
@@ -64,12 +66,12 @@ since the datasets share some characteristics, I used the same hyper-parameters 
 
 In general, the parameters I used are:
 
-optimize = Adam
-epochs = 80
-batch = 128
-gen_lr = 0.00035
-crit_lr = 1e-4
-z_dim = 200
+* optimize = Adam
+* epochs = 80
+* batch = 128
+* gen_lr = 0.00035
+* crit_lr = 1e-4
+* z_dim = 200
 
 where z_dim is the size of the hidden space
 * **In the next part I will explain my decisions for each of the parameters**
