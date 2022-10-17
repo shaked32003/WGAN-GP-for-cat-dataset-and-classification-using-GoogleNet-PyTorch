@@ -16,7 +16,7 @@ The data included about 20 thousand images in different positions of different t
 The results were not good and it seemed that the model was far from succeeding in imitating the given distribution
 In the bottom image you can see the original data and in the top image the performance of the model for the given data:
 
-<img width="262" alt="Screenshot 2022-10-06 at 1 15 03" src="https://user-images.githubusercontent.com/96596252/195866557-cf5b2d60-e598-b1409- 4faac1107cc5. png">
+![Uploading צילום מסך 2022-10-06 ב-1.15.03.png…]
 
 After researching and reading I came to the conclusion that the data is too complex and the variation between the images is large which makes the data problematic when the main reasons are:
 - Many background noises that make it difficult to perform the task
