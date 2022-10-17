@@ -119,14 +119,12 @@ Finally I decided to stay with Adan when combining it with finding the optimal s
 
 In the following pictures you can see the learning process of the cat pictures during the training:
 
-<img width="273" alt="צילום מסך 2022-10-17 ב-19 36 00" src="https://user-images.githubusercontent.com/96596252/196234529-2afc04c4-ad3e-4863-af3c-5b990eb04ae7.png">
 epoch 10
-
-<img width="271" alt="צילום מסך 2022-10-17 ב-19 36 38" src="https://user-images.githubusercontent.com/96596252/196234642-ef21579f-5c0c-4e83-9c3e-2630a716f138.png">
+<img width="266" alt="צילום מסך 2022-10-17 ב-19 42 25" src="https://user-images.githubusercontent.com/96596252/196235340-7ba4f98e-65fb-4891-a403-f672f7ef1b3f.png">
 epoch 40
-
-<img width="266" alt="צילום מסך 2022-10-17 ב-16 31 16" src="https://user-images.githubusercontent.com/96596252/196234792-56d229b8-cc73-4b70-aac0-752df2a4f16d.png">
+<img width="262" alt="צילום מסך 2022-10-17 ב-19 42 53" src="https://user-images.githubusercontent.com/96596252/196235399-f2508d2f-3a19-4ca6-bc22-eaf06dc78c30.png">
 epoch 100
+<img width="254" alt="צילום מסך 2022-10-17 ב-19 42 13" src="https://user-images.githubusercontent.com/96596252/196235308-734f3203-bc5c-41a2-80ee-eeeecc0953ae.png">
 
 
 
