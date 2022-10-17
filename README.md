@@ -33,16 +33,13 @@ Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-
 
 After cleaning images that I placed that could damage the quality of the output for one of the reasons I mentioned above, I got the following results where in the upper block you can see the images created by the generator and in the lower block the original images:
 
-
+128x128 cat outpot:
 
 <img width="263" alt="צילום מסך 2022-10-14 ב-20 51 46" src="https://user-images.githubusercontent.com/96596252/196210837-f7bf39fa-c2a9-453c-aeb2-f350528359ab.png"> 
-128x128 cat outpot
 
-
+128x128 dog outpot:
 
 <img width="261" alt="צילום מסך 2022-10-17 ב-18 53 00" src="https://user-images.githubusercontent.com/96596252/196224787-46a83e43-28cf-4ace-aea2-38e549e0605f.png"> 
-128x128 dog outpot
-
 
 The results obtained were good relative to the running time of the model and the amount of learned parameters (I will elaborate on this in the model section) but they could not be used as input to the classification model due to their low resolution.
 As a result, I decided to change direction and try to produce images with a higher resolution of 512x512.
@@ -53,8 +50,10 @@ Also, the task should make changes to the network architecture, which I will men
 
 Below is an example of the results obtained:
 
+512x512 cat outpot:
+
 <img width="266" alt="צילום מסך 2022-10-17 ב-16 31 16" src="https://user-images.githubusercontent.com/96596252/196223664-389617fe-bb9c-4501-8960-77c6fa520b06.png"> 
-512x512 cat outpot
+
 
 
 # Model
