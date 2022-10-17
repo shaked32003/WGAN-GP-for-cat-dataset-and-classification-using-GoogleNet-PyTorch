@@ -34,8 +34,10 @@ Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-
 After cleaning images that I placed that could damage the quality of the output for one of the reasons I mentioned above, I got the following results where in the upper block you can see the images created by the generator and in the lower block the original images:
 
 <img width="263" alt="צילום מסך 2022-10-14 ב-20 51 46" src="https://user-images.githubusercontent.com/96596252/196210837-f7bf39fa-c2a9-453c-aeb2-f350528359ab.png">
+128x128 cat outpot
 
 <img width="261" alt="צילום מסך 2022-10-17 ב-18 53 00" src="https://user-images.githubusercontent.com/96596252/196224787-46a83e43-28cf-4ace-aea2-38e549e0605f.png">
+128x128 dog outpot
 
 The results obtained were good relative to the running time of the model and the amount of learned parameters (I will elaborate on this in the model section) but they could not be used as input to the classification model due to their low resolution.
 As a result, I decided to change direction and try to produce images with a higher resolution of 512x512.
@@ -47,7 +49,7 @@ Also, the task should make changes to the network architecture, which I will men
 Below is an example of the results obtained:
 
 <img width="266" alt="צילום מסך 2022-10-17 ב-16 31 16" src="https://user-images.githubusercontent.com/96596252/196223664-389617fe-bb9c-4501-8960-77c6fa520b06.png">
-
+512x512 cat outpot
 
 
 
@@ -106,6 +108,25 @@ where z_dim is the size of the hidden space
 
 
 **In the next part I will explain my decisions for each of the parameters**
+
+# Training
+
+As you can understand from what I have written so far, the attempts were many and with them also the training, when the main challenge for each type of data was to balance the model for convergence
+Already in the first training I saw that the lr value greatly affects the performance and the convergence and the changes in the result are significant, every smallest change in the lr values went through when at the end I made use of the parameters I mentioned in the model phase
+Another criterion that had a great impact was the instability of the Adan optimizer in the first gradient steps due to a lack of calculation data when this, in the limit of the delicate lr problem, caused very large steps in the initial 100 steps - one of the solutions I tried was to switch to the RMSprom optimizer, which indeed solved the initial instability problem but had difficulty converging later in the training
+
+Finally I decided to stay with Adan when combining it with finding the optimal small lr value was able to produce relatively reasonable steps in the stages of Adan's instability
+
+In the following pictures you can see the learning process of the cat pictures during the training:
+
+<img width="273" alt="צילום מסך 2022-10-17 ב-19 36 00" src="https://user-images.githubusercontent.com/96596252/196234529-2afc04c4-ad3e-4863-af3c-5b990eb04ae7.png">
+epoch 10
+
+<img width="271" alt="צילום מסך 2022-10-17 ב-19 36 38" src="https://user-images.githubusercontent.com/96596252/196234642-ef21579f-5c0c-4e83-9c3e-2630a716f138.png">
+epoch 40
+
+<img width="266" alt="צילום מסך 2022-10-17 ב-16 31 16" src="https://user-images.githubusercontent.com/96596252/196234792-56d229b8-cc73-4b70-aac0-752df2a4f16d.png">
+epoch 100
 
 
 
