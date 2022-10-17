@@ -111,6 +111,8 @@ where z_dim is the size of the hidden space
 
 # Training
 
+**wgan-gp training**
+
 As you can understand from what I have written so far, the attempts were many and with them also the training, when the main challenge for each type of data was to balance the model for convergence
 Already in the first training I saw that the lr value greatly affects the performance and the convergence and the changes in the result are significant, every smallest change in the lr values went through when at the end I made use of the parameters I mentioned in the model phase
 Another criterion that had a great impact was the instability of the Adan optimizer in the first gradient steps due to a lack of calculation data when this, in the limit of the delicate lr problem, caused very large steps in the initial 100 steps - one of the solutions I tried was to switch to the RMSprom optimizer, which indeed solved the initial instability problem but had difficulty converging later in the training
@@ -129,6 +131,6 @@ epoch 100
 
 <img width="254" alt="צילום מסך 2022-10-17 ב-19 42 13" src="https://user-images.githubusercontent.com/96596252/196235308-734f3203-bc5c-41a2-80ee-eeeecc0953ae.png">
 
-
+**GoogleNet training**
 
 
