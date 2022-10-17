@@ -16,7 +16,7 @@ The data included about 20 thousand images in different positions of different t
 The results were not good and it seemed that the model was far from succeeding in imitating the given distribution
 In the bottom image you can see the original data and in the top image the performance of the model for the given data:
 
-![Uploading צילום מסך 2022-10-06 ב-1.15.03.png…]
+<img width="262" alt="צילום מסך 2022-10-06 ב-1 15 03" src="https://user-images.githubusercontent.com/96596252/196225536-6c5348ff-7707-44b5-b633-058e17c13cad.png">
 
 After researching and reading I came to the conclusion that the data is too complex and the variation between the images is large which makes the data problematic when the main reasons are:
 - Many background noises that make it difficult to perform the task
@@ -54,10 +54,14 @@ Below is an example of the results obtained:
 
 # Model
 
+Here, too, it was convenient to break down the explanations of the model into two main parts
+
+**WGAN model**
+
 ![IMG_4368](https://user-images.githubusercontent.com/96596252/195898370-b7fb3055-b7bd-42a8-bad9-7bcb29f7715f.PNG)
 
 The model chosen was as mentioned wgan-gp
-The architecture of the Generator was built from 5 blocks including:
+for 128x128 input The architecture of the Generator was built from 5 blocks including:
 
 - nn.ConvTranspose2d()
 - nn.BatchNorm2d()
@@ -81,6 +85,8 @@ and another exit layer that includes:
 After researching that the model performs well with nn.InstanceNorm2d()
 and nn.LeakyReLU() in tasks similar to my task such as creating a person's face or bedrooms
 
+for 512x512 input I added two additional block layers to the generator and critic with the same block architecture as the one specified above (a total of 7 blocks instead of 5 and output layers the same as specified above)
+
 since the datasets share some characteristics, I used the same hyper-parameters for both tasks
 
 In general, the parameters I used are:
@@ -94,6 +100,13 @@ In general, the parameters I used are:
 
 where z_dim is the size of the hidden space
 
+**GoogleNet model**
+
+![Inceptionv1_architecture](https://user-images.githubusercontent.com/96596252/196228960-87a6aa84-cd17-42f8-bff5-b069d44889ed.png)
+
+
 **In the next part I will explain my decisions for each of the parameters**
+
+
 
 
