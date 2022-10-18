@@ -75,7 +75,7 @@ for 128x128 input The architecture of the Generator was built from 5 blocks incl
 
 and another exit layer that includes:
 
-- nn.ConvTranspose2d()
+- 'nn.ConvTranspose2d()'
 - nn.Tanh()
 
 The architecture of the discriminator that the wgan model uses as the Critic was built from 5 blocks that include:
