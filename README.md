@@ -91,7 +91,8 @@ and another exit layer that includes:
 After researching that the model performs well with `nn.InstanceNorm2d()`
 and `nn.LeakyReLU()` in tasks similar to my task such as creating a person's face or bedrooms
 
-for 512x512 input I added two additional block layers to the generator and critic with the same block architecture as the one specified above (a total of 7 blocks instead of 5 and output layers the same as specified above)
+for 512x512 input I added two additional block layers to the generator and critic with the same block architecture as the one specified above (a total of 7 blocks instead of 5 and output layers the same as specified above).
+increasing the resolution of the input caused an increase in the complexity of the model and, of course, a larger input dimension (3 times) which increased the amount of studied parameters significantly and was felt in the running times, but nevertheless I decided to make the change.
 
 since the datasets share some characteristics, I used the same hyper-parameters for both tasks
 
