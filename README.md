@@ -2,8 +2,7 @@
 In this project I am creating generative data using the wgan-gp model of dog and cat faces and performing binary classification for the generative data I created using the GoogleNet network
 My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in wgan-gp.
 
-<img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> <img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410270-4cf971f9-d558-4d16-b54d-8b8f62d8bffb.png">
-
+<img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> 
 
 
 The following coverage presents the **main points and main conclusions** in each part of the project process, but in practice there were additional considerations
@@ -37,13 +36,10 @@ Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-
 
 After cleaning images that I placed that could damage the quality of the output for one of the reasons I mentioned above, I got the following results where in the upper block you can see the images created by the generator and in the lower block the original images:
 
-128x128 cat outpot:
+128x128 outpot:
 
-<img width="263" alt="צילום מסך 2022-10-14 ב-20 51 46" src="https://user-images.githubusercontent.com/96596252/196210837-f7bf39fa-c2a9-453c-aeb2-f350528359ab.png"> 
-
-128x128 dog outpot:
-
-<img width="261" alt="צילום מסך 2022-10-17 ב-18 53 00" src="https://user-images.githubusercontent.com/96596252/196224787-46a83e43-28cf-4ace-aea2-38e549e0605f.png"> 
+<img width="263" alt="צילום מסך 2022-10-14 ב-20 51 46" src="https://user-images.githubusercontent.com/96596252/196210837-f7bf39fa-c2a9-453c-aeb2-f350528359ab.png"> <img width="261" alt="צילום מסך 2022-10-17 ב-18 53 00" src="https://user-images.githubusercontent.com/96596252/196224787-46a83e43-28cf-4ace-aea2-38e549e0605f.png"> 
+ 
 
 The results obtained were good relative to the running time of the model and the amount of learned parameters (I will elaborate on this in the model section) but they could not be used as input to the classification model due to their low resolution.
 As a result, I decided to change direction and try to produce images with a higher resolution of 512x512.
