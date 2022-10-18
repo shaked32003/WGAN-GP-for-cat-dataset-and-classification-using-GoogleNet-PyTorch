@@ -33,7 +33,7 @@ The main conclusion was that it is better to use data that focuses more on a cer
 I decided to focus on the faces of the dogs and cats and create images that resemble them
 The new goal was to generate data consisting only of cat/dog faces
 The first data I specified was not workable for the task due to the points mentioned above so I looked for new face data
-Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-face-recognition) which included 18k images and for the cats (https://www.kaggle.com/datasets/spandan2/ cats-faces-64x64 -for-generative-models) which included 16k images when I also processed them with a resolution of 128x128 which was more appropriate in the case probably due to the continuity of colors and the low variation between the pixels
+Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-face-recognition) which included 18k images and for the cats (https://www.kaggle.com/datasets/spandan2/cats-faces-64x64 -for-generative-models) which included 16k images when I also processed them with a resolution of 128x128 which was more appropriate in the case probably due to the continuity of colors and the low variation between the pixels
 
 
 After cleaning images that I placed that could damage the quality of the output for one of the reasons I mentioned above, I got the following results where in the upper block you can see the images created by the generator and in the lower block the original images:
