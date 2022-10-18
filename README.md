@@ -69,27 +69,27 @@ Here, too, it was convenient to break down the explanations of the model into tw
 The model chosen was as mentioned wgan-gp
 for 128x128 input The architecture of the Generator was built from 5 blocks including:
 
-- nn.ConvTranspose2d()
-- nn.BatchNorm2d()
-- nn.ReLU()
+- `nn.ConvTranspose2d()`
+- `nn.BatchNorm2d()`
+- `nn.ReLU()`
 
 and another exit layer that includes:
 
 - `nn.ConvTranspose2d()`
-- nn.Tanh()
+- `nn.Tanh()`
 
 The architecture of the discriminator that the wgan model uses as the Critic was built from 5 blocks that include:
 
-- nn.Conv2d()
-- nn.InstanceNorm2d()
-- nn.LeakyReLU()
+- `nn.Conv2d()`
+- `nn.InstanceNorm2d()`
+- `nn.LeakyReLU()`
 
 and another exit layer that includes:
 
-- nn.Conv2d()
+- `nn.Conv2d()`
 
-After researching that the model performs well with nn.InstanceNorm2d()
-and nn.LeakyReLU() in tasks similar to my task such as creating a person's face or bedrooms
+After researching that the model performs well with `nn.InstanceNorm2d()`
+and `nn.LeakyReLU()` in tasks similar to my task such as creating a person's face or bedrooms
 
 for 512x512 input I added two additional block layers to the generator and critic with the same block architecture as the one specified above (a total of 7 blocks instead of 5 and output layers the same as specified above)
 
@@ -104,7 +104,7 @@ In general, the parameters I used are:
 * crit_lr = 1e-4
 * z_dim = 200
 
-where z_dim is the size of the hidden space
+where `z_dim` is the size of the hidden space
 
 **GoogleNet model**
 
