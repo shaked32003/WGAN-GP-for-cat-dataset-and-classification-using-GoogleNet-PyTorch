@@ -1,7 +1,7 @@
 # WGAN-GP for cat dog dataset and classification using GoogleNet
 
 # introduction
-In this project I am creating generative data using the wgan-gp model of dog and cat faces and performing binary classification for the generative data I created using the GoogleNet network
+In this project I am creating generative data using the wgan-gp model of dog and cat faces and performing binary classification for the generative data I created using the GoogleNet network using pytorch library.
 My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in wgan-gp.
 
 <img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> 
