@@ -130,12 +130,13 @@ In the following pictures you can see the learning process of the cat pictures d
 
 epoch 10
 
-<img width="266" alt="צילום מסך 2022-10-17 ב-19 42 25" src="https://user-images.githubusercontent.com/96596252/196235340-7ba4f98e-65fb-4891-a403-f672f7ef1b3f.png"> <img width="264" alt="צילום מסך 2022-10-21 ב-14 28 26" src="https://user-images.githubusercontent.com/96596252/202817308-d837f3f8-5095-4b14-be97-8feddab3d37d.png">
+<img width="266" alt="צילום מסך 2022-10-17 ב-19 42 25" src="https://user-images.githubusercontent.com/96596252/196235340-7ba4f98e-65fb-4891-a403-f672f7ef1b3f.png"> <img width="268" alt="צילום מסך 2022-11-19 ב-1 03 51" src="https://user-images.githubusercontent.com/96596252/202817515-23efef3e-4a79-4cab-b71b-57632b398a95.png">
+
  
 epoch 40
 
-<img width="262" alt="צילום מסך 2022-10-17 ב-19 42 53" src="https://user-images.githubusercontent.com/96596252/196235399-f2508d2f-3a19-4ca6-bc22-eaf06dc78c30.png"> <img width="269" alt="צילום מסך 2022-10-21 ב-14 29 10" src="https://user-images.githubusercontent.com/96596252/202817341-39b32f83-c93a-42ff-b986-4b88362927e3.png">
-
+<img width="262" alt="צילום מסך 2022-10-17 ב-19 42 53" src="https://user-images.githubusercontent.com/96596252/196235399-f2508d2f-3a19-4ca6-bc22-eaf06dc78c30.png"> <img width="264" alt="צילום מסך 2022-11-19 ב-1 04 03" src="https://user-images.githubusercontent.com/96596252/202817525-5ba589f8-b51f-4858-81cc-620fb7e50a7f.png">
+ 
 epoch 100
 
 <img width="254" alt="צילום מסך 2022-10-17 ב-19 42 13" src="https://user-images.githubusercontent.com/96596252/196235308-734f3203-bc5c-41a2-80ee-eeeecc0953ae.png">
