@@ -1,10 +1,10 @@
-# WGAN-GP for cat dog dataset and classification using GoogleNet
+# WGAN-GP for cat dataset and classification using GoogleNet
 
 # introduction
 In this project I am creating generative data using the wgan-gp model of dog and cat faces and performing binary classification for the generative data I created using the GoogleNet network using pytorch library.
 My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in wgan-gp.
 
-<img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> <img width="263" alt="צילום מסך 2022-11-19 ב-0 51 19" src="https://user-images.githubusercontent.com/96596252/202817040-7155cf1b-ec2a-4a59-afbc-c37f86be9c0f.png">
+<img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> 
 
 
 The following coverage presents the **main points and main conclusions** in each part of the project process, but in practice there were additional considerations
@@ -130,12 +130,12 @@ In the following pictures you can see the learning process of the cat pictures d
 
 epoch 10
 
-<img width="266" alt="צילום מסך 2022-10-17 ב-19 42 25" src="https://user-images.githubusercontent.com/96596252/196235340-7ba4f98e-65fb-4891-a403-f672f7ef1b3f.png"> <img width="268" alt="צילום מסך 2022-11-19 ב-1 03 51" src="https://user-images.githubusercontent.com/96596252/202817515-23efef3e-4a79-4cab-b71b-57632b398a95.png">
+<img width="266" alt="צילום מסך 2022-10-17 ב-19 42 25" src="https://user-images.githubusercontent.com/96596252/196235340-7ba4f98e-65fb-4891-a403-f672f7ef1b3f.png"> 
 
  
 epoch 40
 
-<img width="262" alt="צילום מסך 2022-10-17 ב-19 42 53" src="https://user-images.githubusercontent.com/96596252/196235399-f2508d2f-3a19-4ca6-bc22-eaf06dc78c30.png"> <img width="264" alt="צילום מסך 2022-11-19 ב-1 04 03" src="https://user-images.githubusercontent.com/96596252/202817525-5ba589f8-b51f-4858-81cc-620fb7e50a7f.png">
+<img width="262" alt="צילום מסך 2022-10-17 ב-19 42 53" src="https://user-images.githubusercontent.com/96596252/196235399-f2508d2f-3a19-4ca6-bc22-eaf06dc78c30.png"> 
  
 epoch 100
 
