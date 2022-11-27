@@ -57,7 +57,12 @@ Below is an example of the results obtained:
 
 <img width="266" alt="צילום מסך 2022-10-17 ב-16 31 16" src="https://user-images.githubusercontent.com/96596252/196223664-389617fe-bb9c-4501-8960-77c6fa520b06.png"> 
 
+**data for googleNet input**
 
+After creating generative images of cats, I built two different data sources for the training phase:
+The first was data that included 2500 images of dogs and 2500 images of cats, with 85% of the cat data being generative images of cats (2125 generative images)
+
+The second was 2500 images of dogs and cats where here both classes were real and taken from the training data of (https://www.kaggle.com/datasets/andrewmvd/animal-faces)
 
 # Model
 
