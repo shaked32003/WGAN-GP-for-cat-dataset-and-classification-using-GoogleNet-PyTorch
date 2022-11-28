@@ -2,7 +2,7 @@
 
 # introduction
 A self-study project in which I am creating generative data using the WGAN-GP model of cat faces and performing binary classification for the generative data and dog image I created using the GoogleNet network using PyTorch library.
-My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in wgan-gp.
+My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in WGAN-GP.
 
 <img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> 
  
@@ -13,9 +13,9 @@ The following coverage presents the **main points and main conclusions** in each
 # dataset
 The data area was one of the most challenging areas in the project and is divided into several parts where the data challenges changed in each of them:
 
-**Data for wgan-gp input:**
+**Data for WGAN-GP input:**
 
-In this part I was required to find and process data that would suit the task and it would be possible to create synthetic images of cats using the wgan model that could be worked with
+In this part I was required to find and process data that would suit the task and it would be possible to create synthetic images of cats using the WGAN model that could be worked with
 
 I first used images of (https://www.kaggle.com/datasets/tongpython/cat-and-dog) and had the assumption that the data I chose was indeed noisy but workable for a wgan type model
 The data included about 20 thousand images in different positions of different types of cat which I converted into 128x128 size images when they were entered into the model
