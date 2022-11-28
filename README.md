@@ -168,9 +168,8 @@ epoch 100
 In the training phase I ran two identical models for each dataset I created in order to check the behavior of the model between the generative data and the real one
 After a bit of playing with the hyperparameters I was able to get almost identical to completely identical results between the two datasets of 99.9% accuracy of the generative data work
 It seemed from all the attempts that in the very initial training stages of the generative data the model tends to get more confused in the val stage than in the training of the real data but the model stabilized to high accuracy percentages quite quickly
+It seemed from all the attempts that in the very initial training stages of the generative data the model tends to get more confused in the val stage than in the training of the real data but the model stabilized to high accuracy percentages quite quickly
 
 <img width="600" alt="צילום מסך 2022-11-28 ב-12 20 34" src="https://user-images.githubusercontent.com/96596252/204253683-ab499281-009c-40de-a402-384a99b2c1e6.png">
 
 <img width="603" alt="צילום מסך 2022-11-28 ב-12 20 48" src="https://user-images.githubusercontent.com/96596252/204253742-2132dec2-d07c-46fd-829b-c5f4250514f6.png">
-
-It seemed from all the attempts that in the very initial training stages of the generative data the model tends to get more confused in the val stage than in the training of the real data but the model stabilized to high accuracy percentages quite quickly
