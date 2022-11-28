@@ -60,7 +60,7 @@ Below is an example of the results obtained:
 I began to produce a relatively large number of images and save them as `jpg files`. After creation, I went through the collection of images and cleaned images from the data that could mislead the model - at this stage I looked for images whose outlines would be clear so that the model would have good working material during identification
 
 After creating generative images of cats and clean data, I built two different data sources for the training phase:
-The first was data that included 2500 images of dogs and 2500 images of cats, with 85% of the cat data being generative images of cats (2125 generative images)
+The first was data that included 2500 images of dogs and 2500 images of cats, **with 85% of the cat data being generative images of cats** (2125 generative images)
 
 The second was 2500 images of dogs and cats where here both classes were real and taken from the training data of (https://www.kaggle.com/datasets/andrewmvd/animal-faces)
 
