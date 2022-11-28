@@ -1,7 +1,7 @@
 # WGAN-GP for cat dataset and classification using GoogleNet
 
 # introduction
-In this project I am creating generative data using the wgan-gp model of dog and cat faces and performing binary classification for the generative data I created using the GoogleNet network using pytorch library.
+In this project I am creating generative data using the wgan-gp model of cat faces and performing binary classification for the generative data and dog image I created using the GoogleNet network using pytorch library.
 My goal in the project was to illustrate and explore the potential of using generative data for various purposes in the field of dl and dealing with the challenges when creating it, experience in the field of generative models and in particular in wgan-gp.
 
 <img width="262" alt="צילום מסך 2022-10-18 ב-12 53 23" src="https://user-images.githubusercontent.com/96596252/196410147-ec64a470-c7f4-49a9-b04e-ead990f92678.png"> 
@@ -15,10 +15,10 @@ The data area was one of the most challenging areas in the project and is divide
 
 **Data for wgan-gp input:**
 
-In this part I was required to find and process data that would suit the task and it would be possible to create synthetic images of cats and dogs using the wgan model that could be worked with
+In this part I was required to find and process data that would suit the task and it would be possible to create synthetic images of cats using the wgan model that could be worked with
 
 I first used images of whole dogs (https://www.kaggle.com/datasets/tongpython/cat-and-dog) and had the assumption that the data I chose was indeed noisy but workable for a wgan type model
-The data included about 20 thousand images in different positions of different types of dogs which I converted into 128x128 size images when they were entered into the model
+The data included about 20 thousand images in different positions of different types of cat which I converted into 128x128 size images when they were entered into the model
 The results were not good and it seemed that the model was far from succeeding in imitating the given distribution
 In the bottom image you can see the original data and in the top image the performance of the model for the given data:
 
@@ -31,10 +31,10 @@ After researching and reading I came to the conclusion that the data is too comp
 
 The main conclusion was that it is better to use data that focuses more on a certain object and reach a situation where the variation between the images will not be high
 
-I decided to focus on the faces of the dogs and cats and create images that resemble them
-The new goal was to generate data consisting only of cat/dog faces
+I decided to focus on the faces of cats and create images that resemble them
+The new goal was to generate data consisting only of cat faces
 The first data I specified was not workable for the task due to the points mentioned above so I looked for new face data
-Finally I chose for the dogs (https://www.kaggle.com/datasets/wutheringwang/dog-face-recognition) which included 18k images and for the cats (https://www.kaggle.com/datasets/spandan2/cats-faces-64x64-for-generative-models) which included 16k images when I also processed them with a resolution of 128x128 which was more appropriate in the case probably due to the continuity of colors and the low variation between the pixels
+Finally I chose for the cats (https://www.kaggle.com/datasets/spandan2/cats-faces-64x64-for-generative-models) which included 16k images when I also processed them with a resolution of 128x128 which was more appropriate in the case probably due to the continuity of colors and the low variation between the pixels
 
 
 After cleaning images that I placed that could damage the quality of the output for one of the reasons I mentioned above, I got the following results where in the upper block you can see the images created by the generator and in the lower block the original images:
@@ -48,7 +48,7 @@ The results obtained were good relative to the running time of the model and the
 As a result, I decided to change direction and try to produce images with a higher resolution of 512x512.
 In addition, following the findings I have reached so far, I assumed that it is possible to achieve good performance even for face images that are noisier than what I have worked with so far due to the fact that the image will be more "detailed" thanks to the increased amount of pixels and it will be possible to identify additional patterns even for high variability with a suitable model
 
-In order to carry out the task I used the data (https://www.kaggle.com/datasets/andrewmvd/animal-faces) and in it I used the "dog" and "cat" folders that included about 5k different pictures of faces with louder ones at a resolution of 512x512
+In order to carry out the task I used the data (https://www.kaggle.com/datasets/andrewmvd/animal-faces) and in it I used the "cat" folders that included about 5k different pictures of faces with louder ones at a resolution of 512x512
 Also, the task should make changes to the network architecture, which I will mention in the "model" section
 
 Below is an example of the results obtained:
@@ -173,3 +173,7 @@ It seemed from all the attempts that in the very initial training stages of the 
 <img width="600" alt="צילום מסך 2022-11-28 ב-12 20 34" src="https://user-images.githubusercontent.com/96596252/204253683-ab499281-009c-40de-a402-384a99b2c1e6.png">
 
 <img width="603" alt="צילום מסך 2022-11-28 ב-12 20 48" src="https://user-images.githubusercontent.com/96596252/204253742-2132dec2-d07c-46fd-829b-c5f4250514f6.png">
+
+# conclusions
+Integrating generic data into my original data can be a solution for augmentation or class balance
+I believe that in the future I will continue to perform more experiments in this project. It is worth examining additional effects of using generic data in classification problems
