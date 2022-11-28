@@ -55,7 +55,7 @@ Below is an example of the results obtained:
 
 <img width="266" alt="צילום מסך 2022-10-17 ב-16 31 16" src="https://user-images.githubusercontent.com/96596252/196223664-389617fe-bb9c-4501-8960-77c6fa520b06.png"> 
 
-**data for googleNet input**
+**data for googleNet input:**
 
 I began to produce a relatively large number of images and save them as `jpg files`. After creation, I went through the collection of images and cleaned images from the data that could mislead the model - at this stage I looked for images whose outlines would be clear so that the model would have good working material during identification
 
@@ -72,7 +72,7 @@ I applied the same transforms to both training groups so that the only variable 
 
 Here, too, it was convenient to break down the explanations of the model into two main parts
 
-**WGAN model**
+**WGAN model:**
 
 ![IMG_4368](https://user-images.githubusercontent.com/96596252/195898370-b7fb3055-b7bd-42a8-bad9-7bcb29f7715f.PNG)
 
@@ -136,7 +136,7 @@ The parameters I chose for the model are:
 
 # Training
 
-**wgan-gp training**
+**wgan-gp training:**
 
 As you can understand from what I have written so far, the attempts were many and with them also the training, when the main challenge for each type of data was to balance the model for convergence
 Already in the first training I saw that the lr value greatly affects the performance and the convergence and the changes in the result are significant, every smallest change in the lr values went through when at the end I made use of the parameters I mentioned in the model phase
@@ -161,7 +161,7 @@ epoch 100
 
 <img width="254" alt="צילום מסך 2022-10-17 ב-19 42 13" src="https://user-images.githubusercontent.com/96596252/196235308-734f3203-bc5c-41a2-80ee-eeeecc0953ae.png">
 
-**GoogleNet training**
+**GoogleNet training:**
 
 In the training phase I ran two identical models for each dataset I created in order to check the behavior of the model between the generative data and the real one
 After a bit of playing with the hyperparameters I was able to get almost identical to completely identical results between the two datasets of 99.9% accuracy of the generative data work
