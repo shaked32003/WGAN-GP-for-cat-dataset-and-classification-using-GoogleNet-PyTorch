@@ -59,10 +59,16 @@ Below is an example of the results obtained:
 
 **data for googleNet input**
 
-After creating generative images of cats, I built two different data sources for the training phase:
+I began to produce a relatively large number of images and save them as `jpg files`. After creation, I went through the collection of images and cleaned images from the data that could mislead the model - at this stage I looked for images whose outlines would be clear so that the model would have good working material during identification
+
+After creating generative images of cats and clean data, I built two different data sources for the training phase:
 The first was data that included 2500 images of dogs and 2500 images of cats, with 85% of the cat data being generative images of cats (2125 generative images)
 
 The second was 2500 images of dogs and cats where here both classes were real and taken from the training data of (https://www.kaggle.com/datasets/andrewmvd/animal-faces)
+
+AAt the moment my two data sets were balanced in terms of their size. It is worth checking how the model behaves with the distribution of the generative data. The augmentation methods you used were methods like `transforms.RandomHorizontalFlip()` which did not change the distribution of the data
+
+I applied the same transforms to both training groups so that the only variable between the two classes was only that one of them had a generative dataset
 
 # Model
 
@@ -113,12 +119,22 @@ In general, the parameters I used are:
 
 where `z_dim` is the size of the hidden space
 
+**In the next part I will explain my decisions for each of the parameters**
+
 **GoogleNet model**
 
 ![Inceptionv1_architecture](https://user-images.githubusercontent.com/96596252/196228960-87a6aa84-cd17-42f8-bff5-b069d44889ed.png)
 
+My assumption for the generative images was that they are not sharp "and the limits" that the model must learn (for example the shape of the ear) were less accurate than a real image, so I understood that a slightly deeper network than the standard mode is needed, but it is worth trying to save as much on the number of studied parameters and the training time as possible, I decided to use in the googlenet model
 
-**In the next part I will explain my decisions for each of the parameters**
+In addition, due to the constraints of the low amount of data that I used, the model that I claimed was pre-training in order to get an initialization that approximates the layers of the model
+
+The parameters I chose for the model are:
+
+* optimize = Adam
+* epochs = 10
+* batch = 32
+* lr = 1e-3
 
 # Training
 
@@ -148,5 +164,9 @@ epoch 100
 <img width="254" alt="צילום מסך 2022-10-17 ב-19 42 13" src="https://user-images.githubusercontent.com/96596252/196235308-734f3203-bc5c-41a2-80ee-eeeecc0953ae.png">
 
 **GoogleNet training**
+
+In the training phase I ran two identical models for each dataset I created in order to check the behavior of the model between the generative data and the real one
+After a bit of playing with the hyperparameters I was able to get almost identical to completely identical results between the two datasets of 99.9% accuracy of the generative data work
+It seemed from all the attempts that in the very initial training stages of the generative data the model tends to get more confused in the val stage than in the training of the real data but the model stabilized to high accuracy percentages quite quickly
 
 
