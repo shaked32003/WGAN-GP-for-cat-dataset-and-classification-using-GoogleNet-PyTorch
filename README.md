@@ -17,16 +17,14 @@ The data area was one of the most challenging areas in the project and is divide
 
 In this part I was required to find and process data that would suit the task and it would be possible to create synthetic images of cats using the wgan model that could be worked with
 
-I first used images of whole dogs (https://www.kaggle.com/datasets/tongpython/cat-and-dog) and had the assumption that the data I chose was indeed noisy but workable for a wgan type model
+I first used images of (https://www.kaggle.com/datasets/tongpython/cat-and-dog) and had the assumption that the data I chose was indeed noisy but workable for a wgan type model
 The data included about 20 thousand images in different positions of different types of cat which I converted into 128x128 size images when they were entered into the model
 The results were not good and it seemed that the model was far from succeeding in imitating the given distribution
-In the bottom image you can see the original data and in the top image the performance of the model for the given data:
 
-<img width="262" alt="צילום מסך 2022-10-06 ב-1 15 03" src="https://user-images.githubusercontent.com/96596252/196225536-6c5348ff-7707-44b5-b633-058e17c13cad.png">
 
 After researching and reading I came to the conclusion that the data is too complex and the variation between the images is large which makes the data problematic when the main reasons are:
 - Many background noises that make it difficult to perform the task
-- The position of the dogs varies from image to image
+- The position of the cats varies from image to image
 - A combination of the first two factors I mentioned with the fact that these are 20k images with different colors causes problems in performing the task since the variation between the images was relatively large and the number of images was large
 
 The main conclusion was that it is better to use data that focuses more on a certain object and reach a situation where the variation between the images will not be high
